@@ -44,7 +44,6 @@ export default function Home() {
 
     return (
         <div>
-            {/* PHẦN HERO BANNER CHÀO MỪNG */}
             <section className="hero-banner">
                 <div className="hero-content">
                     <span className="hero-tag">✨ Chào mừng bạn đến với MiniBlog</span>
@@ -61,7 +60,6 @@ export default function Home() {
             </section>
 
             <div className="container">
-                {/* THANH TÌM KIẾM & THỐNG KÊ */}
                 <div className="search-section">
                     <div className="search-box">
                         <input
@@ -85,7 +83,6 @@ export default function Home() {
                     </div>
                 </div>
 
-                {/* TRẠNG THÁI ĐANG TẢI & BÁO LỖI */}
                 {loading && (
                     <div className="status-box">
                         <p>⏳ Đang tải danh sách bài viết...</p>
@@ -98,7 +95,6 @@ export default function Home() {
                     </div>
                 )}
 
-                {/* DANH SÁCH BÀI VIẾT DẠNG GRID */}
                 {!loading && !error && (
                     <>
                         {filtered.length === 0 ? (
